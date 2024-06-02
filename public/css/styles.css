@@ -1,8 +1,10 @@
 body {
     font-family: Poppins;
-    background-color: #fcf9d8;
+    background: linear-gradient(to bottom, #00665F, #00CCBE);
+    background-repeat: no-repeat;
 }
 
+/* Navbar media */
 @media (min-width: 991px) {
   .nav-link::before {
     content: "";
@@ -16,13 +18,9 @@ body {
     visibility: hidden;
     transition: 0.3s case-in-out ;
   }
-  
-  .nav-link:hover::before, .nav-link.active::before {
-    width: 100%;
-    visibility: visible;
-  }
-  }
+/*---------------*/
 
+/* Carrossel media */
 @media screen and (min-width:577px) {
   .cards_wrapper{
     display: flex;
@@ -44,6 +42,156 @@ body {
     display: none;
   }
   
+}
+/*---------------*/
+
+@media only screen  and (max-width:600px){
+  .form-r{
+      width: 90%;
+      margin-top: 30px;
+      position: absolute;
+       left: 53%;
+  top: 50%;
+      padding-bottom: 40px;
+
+  }
+  .form-container{
+      max-height: 700px;
+  }
+}
+/*---------------*/
+
+/* Navbar style */
+
+.nav-link:hover::before, .nav-link.active::before {
+  width: 100%;
+  visibility: visible;
+}
+}
+
+.navbar {
+  background-color: #00ccbe;
+  height: 80px;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  color:#edebc9;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.navbar-brand:hover {
+  color: #065f5e;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #F8F9FA;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link:active {
+  color: #065f5e;
+}
+
+.login-button {
+  background-color: none;
+  border: #065f5e;
+  border-style: solid;
+  color: #065f5e;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: #065f5e;
+  color: #F8F9FA;
+}
+
+.offcanvas-body, .offcanvas-header {
+  color:#edebc9;
+
+  background-color: #00ccbe;
+}
+
+/*---------------*/
+
+/* Info style */
+
+.apresentacao:before {
+  z-index: 1;
+  background-color:rgba(6, 95, 94, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.apresentacao {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.apresentacao-content {
+  position: relative;
+  z-index: 2;
+}
+
+.info-button {
+  background-color: none;
+  border: #edebc9;
+  border-style: solid;
+  color: #edebc9;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.info-button:hover {
+  background-color: #edebc9;
+  color: #065f5e;
+}
+
+.imagem {
+  max-width:100%;
+  height: auto;
+}
+
+.informacao {
+  color:#edebc9;
+}
+
+.img-info {
+  border-radius: 10px;
+}
+
+/*---------------*/
+
+/* Carrossel style */
+
+.bg-color {
+  padding: 20px;
+  background-color: #edebc9;
 }
 
 .card {
@@ -80,24 +228,36 @@ body {
   max-height: 100%;
 }
 
-.navbar {
-  background-color: #00ccbe;
-  height: 80px;
-}
-
-.navbar-brand {
-  font-weight: 500;
-  color:#edebc9;
-  font-size: 24px;
-  transition: 0.3s color;
-}
-
-.navbar-brand:hover {
+.carousel-title {
   color: #065f5e;
 }
 
-.login-button {
-  background-color: none;
+/*---------------*/
+
+/* Footer style */
+
+.footer {
+  display: flex;
+  color: #edebc9;
+  background-color: #00ccbe;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+/*---------------*/
+
+
+/* Pagina Login */
+.background-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-button-form {
+  background-color: #edebc9;
   border: #065f5e;
   border-style: solid;
   color: #065f5e;
@@ -109,90 +269,40 @@ body {
   transition: 0.3s background-color;
 }
 
-.login-button:hover {
+.login-button-form:hover {
   background-color: #065f5e;
-  color: #F8F9FA;
-}
-
-.info-button {
-  background-color: none;
-  border: #edebc9;
-  border-style: solid;
   color: #edebc9;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 8px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s background-color;
 }
 
-.info-button:hover {
+.form-container {
+  color: #00665F;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
   background-color: #edebc9;
-  color: #065f5e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  border-radius: 20px;
 }
 
-.navbar-toggler {
-  border: none;
-  font-size: 1.25rem;
+.label-login {
+  border-color: #00665F;
+  border-width: 1.5px;
 }
 
-.img-info {
-  border-radius: 10px;
-}
-
-.navbar-toggler:focus, .btn-close:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-.nav-link {
-  color: #F8F9FA;
-  font-weight: 500;
-  position: relative;
-}
-
-.nav-link:hover, .nav-link:active {
-  color: #065f5e;
-}
-
-.apresentacao:before {
-  z-index: 1;
-  background-color:rgba(6, 95, 94, 0.6);
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.apresentacao {
-  position: relative;
+.links a {
   padding-bottom: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: #00665F;
+  
 }
 
-.apresentacao-content {
-  position: relative;
-  z-index: 2;
+.links a:hover {
+  text-decoration: underline;
 }
 
-.carousel-title {
-  color: #065f5e;
-}
+/*---------------*/
 
-.offcanvas-body, .offcanvas-header {
-  color:#edebc9;
 
-  background-color: #00ccbe;
-}
+/***************************** Testes *****************************/
 
-.informacao {
-
-    color:#edebc9;
-}
-
-.imagem {
-    max-width:100%;
-    height: auto;
-}

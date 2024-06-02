@@ -27,37 +27,13 @@
 </head>
 
 <body>
-    <div class="background-login">
-    
-        <div class="form-container ">
-            <form>
 
-                <div class="d-grid gap-2 col-6 mx-auto">
-
-                    
-                    <h1 class="fs-4 text-center lh-base"> <img src="/img/login-icon.svg"/ alt="Ícone Login"> Login </h1>
-                    <div class="mb-2">
-                        <label for="exampleInputEmail" class="form-label fw-semibold fs-6">Usuário</label>
-                        <input type="text" class="form-control form-control-sm label-login">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail" class="form-label fw-semibold fs-6">Senha</label>
-                        <input type="password" class="form-control form-control-sm label-login">
-                    </div>
-                    
-                    <button type="submit" class="login-button-form w-3 mb-2"> Login </button>
-                        
-                    <div class="links text-center fw-medium">
-                        <a href="#" class="mb-3">Esqueceu Usuário/Senha?</a>
-                        <a href="#" class="mb-3">Criar sua conta</a>
-                    </div>
-
-                </div>
-
-            </form>
+    @yield('content')
+    <footer>
+        <div class="container-fluid footer">
+            <p>Footer da aplicação</p>
         </div>
-
-    </div>
+    </footer>
 </body>
 
 </html>
