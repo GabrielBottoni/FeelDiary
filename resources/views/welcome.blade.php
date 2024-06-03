@@ -35,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-            <a href="/login" class="login-button">Login</a>
+            <a href="/formularios/login" class="login-button">Login</a>
 
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"

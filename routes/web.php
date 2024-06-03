@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Cadastro;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CadastroController;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/formularios/login', [ LoginController::class, 'login']);
+
+
+Route::get('/formularios/cadastro', [ CadastroController::class, 'cadastro']);
