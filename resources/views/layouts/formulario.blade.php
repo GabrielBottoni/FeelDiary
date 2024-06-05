@@ -28,14 +28,14 @@
 
 <body>
 
-    @yield('content')
     <div class="background-login">
     
         <div class="form-container ">
-
+            @yield('content')
         </div>
 
     </div>
+    
 </body>
 
 </html>

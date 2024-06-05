@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CadastroTable extends Migration
+class CadastrosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CadastroTable extends Migration
      */
     public function up()
     {
-        Schema::create('cadastro', function (Blueprint $table) {
+        Schema::create('cadastros', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
             $table->string('name');
-            $table->text('password');
+            $table->string('mail')->unique();
+            $table->string('password');
+            $table->text('history');
+            $table->boolean('usertype');
         });
     }
 
